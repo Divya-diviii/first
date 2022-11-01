@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            
+            function getData()
+            {
+                fetch("data.txt").then(res=>res.text().then(data=>{
+
+                    document.write(data);
+                }))
+            }
+            getData();
+            </script>
+    </head>
+    <body>
+    </body>
+</html>
